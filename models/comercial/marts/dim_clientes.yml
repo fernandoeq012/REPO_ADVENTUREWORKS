@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: dim_clientes
+    description: Dimensão de clientes da Adventure Works.
+    columns:
+      - name: pk_cliente
+        description: Chave primária da dimensão clientes.
+        tests:
+          - unique
+          - not_null
+
+      - name: FK_PESSOA
+        description: Chave estrangeira da pessoa.
+        
+      - name: FK_LOJA
+        description: Chave estrangeira da loja.
+      
+      - name: NOME_PESSOA
+        description: Nome da pessoa.
+        
+      - name: NOME_LOJA
+        description: Nome da loja.
+
+      - name: CLIENTE
+        description: Nome do cliente.

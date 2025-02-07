@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_erp__person
+    description: Tabela de preparação dos dados brutos da tabela Person
+    columns:
+      - name: PK_NEGOCIO
+        description: chave primária da entidade de negócio
+
+      - name: NOME_PESSOA
+        description: nome das pessoas
+ 

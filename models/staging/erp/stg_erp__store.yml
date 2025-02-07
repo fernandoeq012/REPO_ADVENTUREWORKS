@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_erp__store
+    description: Tabela de preparação dos dados brutos da tabela Store
+    columns:
+      - name: PK_NEGOCIO
+        description: chave primária da entidade de negócio
+
+      - name: FK_VENDEDOR
+        description: chave estrangeira do vendedor
+
+      - name: NOME_LOJA
+        description: nome da loja
+ 

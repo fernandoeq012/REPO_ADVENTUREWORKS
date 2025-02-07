@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: int_clientes_preparacao
+    description: Tabela intermediária para designar o cliente.
+    columns:
+      - name: PK_CLIENTE
+        description: Chave primária do cliente.
+        data_tests:
+          - unique
+          - not_null
+              
+      - name: FK_PESSOA
+        description: Chave estrangeira da pessoa.
+        
+      - name: FK_LOJA
+        description: Chave estrangeira da loja.
+      
+      - name: NOME_PESSOA
+        description: Nome da pessoa.
+        
+      - name: NOME_LOJA
+        description: Nome da loja.
+
+      - name: CLIENTE
+        description: Nome do cliente.
+        
