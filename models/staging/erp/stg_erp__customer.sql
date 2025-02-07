@@ -5,7 +5,7 @@ with
         , PERSONID
         , STOREID
         , TERRITORYID
-        from {{ source('crm_adventureworks', 'CUSTOMER') }}
+        from {{ source('erp_adventureworks', 'CUSTOMER') }}
     )
 
     , renomeacao as (
