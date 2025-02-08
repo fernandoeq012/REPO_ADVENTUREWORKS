@@ -1,9 +1,9 @@
 with
     fonte_store as (
         select
-        BUSINESSENTITYID
-        , SALESPERSONID
-        , NAME
+            BUSINESSENTITYID
+            , SALESPERSONID
+            , NAME
         from {{ source('erp_adventureworks', 'STORE') }}
     )
 

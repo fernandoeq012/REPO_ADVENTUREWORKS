@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_erp__salesorderheader
+    description: Tabela de preparação dos dados brutos da tabela SALESORDERHEADER
+    columns:
+      - name: PK_ORDEM_DE_VENDA
+        description: chave primária da ordem de venda
+
+      - name: FK_CLIENTE
+        description: chave estrangeira do cliente
+
+      - name: FK_VENDEDOR
+        description: chave estrangeira do vendedor
+
+      - name: FK_ENDERECO_DE_ENVIO
+        description: chave estrangeira do endereço de envio
+
+      - name: FK_CARTAO
+        description: chave estrangeira do cartão
+
+      - name: TOTAL_DA_COMPRA
+        description: total devido pelo cliente
+
+      - name: STATUS_DO_PEDIDO
+        description: status do pedido de compra
+
+      - name: NUMERO_DA_COMPRA
+        description: número da compra do cliente
+
+      - name: DATA_DO_PEDIDO
+        description: data do pedido de compra

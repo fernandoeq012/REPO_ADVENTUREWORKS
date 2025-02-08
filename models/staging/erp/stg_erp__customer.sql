@@ -1,10 +1,10 @@
 with
     fonte_customer as (
         select
-        CUSTOMERID
-        , PERSONID
-        , STOREID
-        , TERRITORYID
+            CUSTOMERID
+            , PERSONID
+            , STOREID
+            , TERRITORYID
         from {{ source('erp_adventureworks', 'CUSTOMER') }}
     )
 

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: int_cartao_preparacao
+    description: Tabela intermediária para designar o tipo do cartão.
+    columns:
+      - name: PK_CARTAO
+        description: Chave primária do cartão.
+        data_tests:
+          - unique
+          - not_null
+              
+      - name: CARTAO
+        description: Tipo do cartão.
+        
+      
+        
