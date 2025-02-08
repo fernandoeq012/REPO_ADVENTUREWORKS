@@ -27,4 +27,17 @@ sources:
             data_tests:
               - unique
               - not_null
-                                   
+      - name: CREDITCARD
+        description: Tabela fonte com dados dos cartões de crédito.
+        columns:
+          - name: CREDITCARDID
+            data_tests:
+              - unique
+              - not_null
+      - name: SALESORDERHEADER
+        description: Tabela fonte com dados dos pedidos de venda.
+        columns:
+          - name: SALESORDERID
+            data_tests:
+              - unique
+              - not_null                                  

@@ -1,11 +1,11 @@
 with
     fonte_person as (
         select
-        BUSINESSENTITYID
-        , FIRSTNAME
-        , MIDDLENAME
-        , LASTNAME
-        , SUFFIX
+            BUSINESSENTITYID
+            , FIRSTNAME
+            , MIDDLENAME
+            , LASTNAME
+            , SUFFIX
         from {{ source('erp_adventureworks', 'PERSON') }}
     )
 
