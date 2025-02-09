@@ -41,3 +41,17 @@ sources:
             data_tests:
               - unique
               - not_null                                  
+      - name: PRODUCT
+        description: Tabela fonte com dados dos produtos.
+        columns:
+          - name: PRODUCTID
+            data_tests:
+              - unique
+              - not_null                                    
+      - name: SALESORDERDETAIL
+        description: Tabela fonte com dados de vendas dos produtos.
+        columns:
+          - name: SALESORDERDETAILID
+            data_tests:
+              - unique
+              - not_null   
