@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_produtos
+    description: Dimensão de produtos da Adventure Works.
+    columns:
+      - name: pk_produto
+        description: Chave primária da dimensão de produtos.
+        tests:
+          - unique
+          - not_null
+
+      - name: PRODUTO
+        description: Tipo de produto.

@@ -20,3 +20,4 @@ with
 
 select *
 from joined
+order by pk_cartao

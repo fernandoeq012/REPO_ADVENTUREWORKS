@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: int_produto_preparacao
+    description: Tabela intermediária para designar o produto.
+    columns:
+      - name: PK_PRODUTO
+        description: Chave primária do produto.
+        data_tests:
+          - unique
+          - not_null
+              
+      - name: PRODUTO
+        description: Nome do produto
+        
+      
+        

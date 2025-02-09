@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_erp__salesorderdetail
+    description: Tabela de preparação dos dados brutos da tabela SALESORDERDETAIL
+    columns:
+      - name: PK_DETALHE_ORDEM_VENDA
+        description: chave primária do detalhe da ordem de venda
+
+      - name: FK_ORDEM_DE_VENDA
+        description: chave estrangeira da ordem da venda
+
+      - name: QUANTIDADE
+        description: quantidade vendida
+
+      - name: FK_PRODUTO
+        description: chave estrangeira do produto
+
+      - name: PRECO_UNITARIO
+        description: preço do produto
+
+      - name: DESCONTO_PRECO_UNITARIO
+        description: desconto do preço unitário do produto

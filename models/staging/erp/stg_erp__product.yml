@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_erp__product
+    description: Tabela de preparação dos dados brutos da tabela Product
+    columns:
+      - name: PK_PRODUTO
+        description: chave primária dos produtos
+
+      - name: NUMERO_PRODUTO
+        description: número de identificção do produto
+
+      - name: NOME_PRODUTO
+        description: nome do produto
