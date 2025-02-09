@@ -54,4 +54,13 @@ sources:
           - name: SALESORDERDETAILID
             data_tests:
               - unique
-              - not_null   
+              - not_null                                    
+      - name: SALESREASON
+        description: Tabela fonte com a lista dos motivos de venda.
+        columns:
+          - name: SALESREASONID
+            data_tests:
+              - unique
+              - not_null                                   
+      - name: SALESORDERHEADERSALESREASON
+        description: Tabela fonte com os ids de motivos de venda pelos ids de ordem de venda.

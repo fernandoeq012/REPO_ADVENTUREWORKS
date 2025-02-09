@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_erp__salesreason
+    description: Tabela de preparação dos dados brutos da tabela SALESREASON
+    columns:
+      - name: PK_MOTIVO
+        description: chave primária da ordem de venda
+
+      - name: MOTIVO
+        description: motivo de compra

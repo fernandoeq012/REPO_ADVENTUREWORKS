@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_motivos
+    description: Dimensão de motivos de compra da Adventure Works.
+    columns:
+      - name: id_venda
+        description: ID de vendas.
+
+      - name: MOTIVO
+        description: Motivo de vendas.
