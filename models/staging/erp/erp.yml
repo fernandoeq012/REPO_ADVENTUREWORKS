@@ -63,4 +63,25 @@ sources:
               - unique
               - not_null                                   
       - name: SALESORDERHEADERSALESREASON
-        description: Tabela fonte com os ids de motivos de venda pelos ids de ordem de venda.
+        description: Tabela fonte com os ids de motivos de venda pelos ids de ordem de venda.                                   
+      - name: ADDRESS
+        description: Tabela fonte com os dados de endereço.
+        columns:
+          - name: ADDRESSID
+            data_tests:
+              - unique
+              - not_null                                    
+      - name: COUNTRYREGION
+        description: Tabela fonte com os dados dos países.
+        columns:
+          - name: COUNTRYREGIONCODE
+            data_tests:
+              - unique
+              - not_null                            
+      - name: STATEPROVINCE
+        description: Tabela fonte com os dados dos estados.
+        columns:
+          - name: STATEPROVINCEID
+            data_tests:
+              - unique
+              - not_null

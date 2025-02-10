@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_erp__stateprovince
+    description: Tabela de preparação dos dados brutos da tabela STATEPROVINCE
+    columns:
+      - name: PK_ESTADO
+        description: chave primária do estado
+
+      - name: FK_PAIS
+        description: chave estrangeira do país
+
+      - name: FK_TERRITORIO
+        description: chave estrangeira do territorio
+
+      - name: SIGLA_ESTADO
+        description: sigla do estado
+
+      - name: ESTADO
+        description: nome do estado
