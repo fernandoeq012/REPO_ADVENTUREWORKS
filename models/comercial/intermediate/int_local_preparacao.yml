@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: int_local_preparacao
+    description: Tabela intermediária para designar o local de envio.
+    columns:
+      - name: PK_LOCAL
+        description: chave primária de local de envio.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: CIDADE
+        description: Cidade de envio.
+
+      - name: ESTADO
+        description: Estado de envio.        
+
+      - name: PAIS
+        description: Pais de envio.      
+           

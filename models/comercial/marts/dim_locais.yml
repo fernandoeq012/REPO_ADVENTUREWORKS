@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_locais
+    description: Dimensão de locais de envio da Adventure Works.
+    columns:
+      - name: pk_local
+        description: Chave primária da dimensão de locais.
+        tests:
+          - unique
+          - not_null
+
+      - name: CIDADE
+        description: Cidade de envio.
+
+      - name: ESTADO
+        description: Estado de envio.
+
+      - name: PAIS
+        description: País de envio.

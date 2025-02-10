@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_erp__countryregion
+    description: Tabela de preparação dos dados brutos da tabela COUNTRYREGION
+    columns:
+      - name: PK_PAIS
+        description: chave primária do país
+
+      - name: PAIS
+        description: nome do país
