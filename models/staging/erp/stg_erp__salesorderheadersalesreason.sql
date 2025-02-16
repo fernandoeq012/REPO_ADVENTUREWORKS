@@ -8,7 +8,8 @@ with
 
     , renomeacao as (
         select
-            cast(SALESORDERID as int) as fk_ordem_de_venda
+            concat(SALESORDERID, '/', SALESREASONID) as pk_motivo_de_venda
+            , cast(SALESORDERID as int) as fk_ordem_de_venda
             , cast(SALESREASONID as int) as fk_motivo
         from fonte_salesorderheadersalesreason
     )

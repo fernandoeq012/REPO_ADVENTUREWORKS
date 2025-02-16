@@ -3,8 +3,8 @@ with
         select
             BUSINESSENTITYID
             , FIRSTNAME
-            , MIDDLENAME
-            , LASTNAME
+            , MIDDLENAME 
+            , LASTNAME 
             , SUFFIX
         from {{ source('erp_adventureworks', 'PERSON') }}
     )

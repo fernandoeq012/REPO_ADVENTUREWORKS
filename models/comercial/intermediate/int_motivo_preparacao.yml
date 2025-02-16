@@ -4,8 +4,8 @@ models:
   - name: int_motivo_preparacao
     description: Tabela intermediária para designar o motivo de venda.
     columns:
-      - name: ID_VENDA
-        description: ID da venda.
+      - name: PK_MOTIVO
+        description: Chave primária do motivo da venda.
               
       - name: Motivo
         description: Motivo de venda

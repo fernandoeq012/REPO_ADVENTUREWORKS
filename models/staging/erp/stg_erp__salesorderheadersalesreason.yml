@@ -4,6 +4,10 @@ models:
   - name: stg_erp__salesorderheadersalesreason
     description: Tabela de preparação dos dados brutos da tabela SALESORDERHEADERSALESREASON
     columns:
+
+      - name: PK_MOTIVO_DE_VENDA
+        description: chave primária do motivo de venda
+
       - name: FK_ORDEM_DE_VENDA
         description: chave estrangeira da ordem de venda
 

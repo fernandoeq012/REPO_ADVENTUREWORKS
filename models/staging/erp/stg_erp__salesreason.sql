@@ -9,7 +9,7 @@ with
     , renomeacao as (
         select
             cast(SALESREASONID as int) as pk_motivo
-            , cast(NAME as varchar) as motivo
+            , cast(NAME as varchar(100)) as motivo
         from fonte_salesreason
     )
 
