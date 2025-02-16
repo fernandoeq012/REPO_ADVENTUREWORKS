@@ -8,8 +8,8 @@ with
 
     , renomeacao as (
         select
-            cast(COUNTRYREGIONCODE as varchar) as pk_pais
-            , cast(NAME as varchar) as pais
+            cast(COUNTRYREGIONCODE as varchar(100)) as pk_pais
+            , cast(NAME as varchar(100)) as pais
         from fonte_countryregion
     )
 

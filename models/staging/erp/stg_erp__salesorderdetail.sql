@@ -16,8 +16,8 @@ with
             , cast(SALESORDERID as int) as fk_ordem_de_venda
             , cast(ORDERQTY as int) as quantidade
             , cast(PRODUCTID as int) as fk_produto
-            , cast(UNITPRICE as float) as preco_unitario
-            , cast(UNITPRICEDISCOUNT as float) as desconto_preco_unitario
+            , cast(UNITPRICE as numeric(20,4)) as preco_unitario
+            , cast(UNITPRICEDISCOUNT as numeric(20,4)) as desconto_preco_unitario
         from fonte_salesorderdetail
     )
 

@@ -11,7 +11,7 @@ with
         select
             cast(ADDRESSID as int) as pk_endereco
             , cast(STATEPROVINCEID as int) as fk_estado
-            , cast(CITY as varchar) as cidade
+            , cast(CITY as varchar(100)) as cidade
         from fonte_address
     )
 

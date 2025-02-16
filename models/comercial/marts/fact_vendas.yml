@@ -1,0 +1,84 @@
+version: 2
+
+models:
+  - name: fact_vendas
+    description: Tabela fato com as métricas de vendas.
+    columns:
+      - name: SK_VENDAS
+        description: Chave suplente da venda.
+        tests:
+          - unique
+          - not_null
+
+      - name: PK_VENDAS
+        description: Chave das vendas
+
+      - name: PK_ORDEM_DE_VENDA
+        description: Chave da ordem de venda
+
+      - name: FK_PRODUTO
+        description: Chave estrangeira do produto
+
+      - name: FK_ENDERECO_DE_ENVIO
+        description: Chave estrangeira do endereço de envio
+
+      - name: FK_VENDEDOR
+        description: Chave estrangeira do vendedor
+
+      - name: FK_CLIENTE
+        description: Chave estrangeira do cliente
+
+      - name: FK_CARTAO
+        description: Chave estrangeira do cartão de crédito
+
+      - name: DATA_DO_PEDIDO
+        description: Data do pedido
+
+      - name: DATA_DO_ENVIO
+        description: Data do envio do pedido
+
+      - name: STATUS_DO_PEDIDO
+        description: Status atual do pedido
+
+      - name: MOTIVO
+        description: Motivo de compra
+
+      - name: EH_ONLINE
+        description: Flag para determinar se o pedido é online ou não.
+
+      - name: QUANTIDADE
+        description: Quantidade pedida por produto.
+
+      - name: PRECO_UNITARIO
+        description: Preço de venda de um produto.
+
+      - name: DESCONTO_PRECO_UNITARIO
+        description: Desconto de uma unidade de produto.
+
+      - name: IMPOSTO
+        description: Imposto do pedido.
+
+      - name: FRETE
+        description: Custo de frete.
+
+      - name: SUBTOTAL
+        description: Subtotal da venda
+
+      - name: TOTAL_DA_COMPRA
+        description: Total do pedido
+
+      - name: VALOR_BRUTO_NEGOCIADO
+        description: Valor bruto da venda
+        
+      - name: SOMA_TOTAL_BRUTO
+        description: Média do valor bruto por transação
+      
+      - name: VALOR_LIQUIDO_NEGOCIADO
+        description: Aplicação do desconto sobre o valor bruto
+
+      - name: VENDA_BRUTA_PRODUTO
+        description: Venda bruta do produto
+        
+      - name: TICKET_MEDIO
+        description: Ticket médio
+        

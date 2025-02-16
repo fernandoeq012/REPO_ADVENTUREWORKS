@@ -9,7 +9,7 @@ with
     , renomeacao as (
         select
             cast(CREDITCARDID as int) as pk_cartao
-            , cast(CARDTYPE as varchar) as tipo_cartao
+            , cast(CARDTYPE as varchar(100)) as tipo_cartao
         from fonte_creditcard
     )
 

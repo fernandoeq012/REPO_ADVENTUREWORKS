@@ -40,7 +40,16 @@ sources:
           - name: SALESORDERID
             data_tests:
               - unique
-              - not_null                                  
+              - not_null  
+      - name: SALESORDERHEADERSALESREASON
+        description: Tabela fonte com dados dos motivos de venda.
+        columns:
+          - name: SALESORDERID
+            data_tests:
+              - not_null 
+          - name: SALESREASONID
+            data_tests:
+              - not_null                                   
       - name: PRODUCT
         description: Tabela fonte com dados dos produtos.
         columns:
@@ -61,9 +70,7 @@ sources:
           - name: SALESREASONID
             data_tests:
               - unique
-              - not_null                                   
-      - name: SALESORDERHEADERSALESREASON
-        description: Tabela fonte com os ids de motivos de venda pelos ids de ordem de venda.                                   
+              - not_null                                                                      
       - name: ADDRESS
         description: Tabela fonte com os dados de endereço.
         columns:

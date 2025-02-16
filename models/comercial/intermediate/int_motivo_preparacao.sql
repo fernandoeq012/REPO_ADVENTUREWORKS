@@ -4,19 +4,13 @@ with
         from {{ref('stg_erp__salesreason')}}
     )
 
-    , headermotivovenda as (
-        select *
-        from {{ref('stg_erp__salesorderheadersalesreason')}}
-    )
-
-    , joined as (
+    , motivopreparado as (
         select
-           headermotivovenda.fk_ordem_de_venda as id_venda
+           motivovenda.pk_motivo as pk_motivo
            , motivovenda.motivo as motivo
-        from headermotivovenda
-        left join motivovenda on headermotivovenda.fk_motivo = motivovenda.pk_motivo
+        from motivovenda
     )
 
 select *
-from joined
-order by id_venda
+from motivopreparado
+order by pk_motivo
